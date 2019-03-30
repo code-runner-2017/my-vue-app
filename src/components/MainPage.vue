@@ -27,7 +27,7 @@
         <v-spacer/>
 
         <v-layout mt-2>
-            <WorkspaceNavigator/>
+            <WorkspaceNavigator @click="onWorkspaceSelected"/>
             <v-layout row>
                 <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
             </v-layout>
@@ -46,8 +46,8 @@
             Thumb, WorkspaceNavigator
         },
         methods: {
-            foo: function() {
-
+            onWorkspaceSelected: function(workspaceName) {
+                alert(workspaceName)
             }
         },
         props: ['text'],

@@ -4,7 +4,7 @@
             :clipped="$vuetify.breakpoint.lgAndUp">
         <v-list>
             <v-list-tile dense v-for="item in items"
-                    :key="item.title" @click="">
+                    :key="item.title" @click="$emit('click', item.title)">
                 <v-list-tile-action>
                     <v-icon :class="[item.icon]">{{ item.icon }}</v-icon>
                 </v-list-tile-action>
