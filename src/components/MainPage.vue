@@ -29,7 +29,7 @@
         <v-layout mt-2>
             <WorkspaceNavigator @selected="onWorkspaceSelected"/>
             <v-layout row>
-                <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
+                <ThumbWithPreview :src="item.url" :title="item.title" v-for='item in items'/>
             </v-layout>
         </v-layout>
     </v-container>
@@ -37,13 +37,14 @@
 
 <script>
     import Thumb from './Thumb'
+    import ThumbWithPreview from './ThumbWithPreview'
     import WorkspaceNavigator from './WorkspaceNavigator'
     import ImageServices from '../services/ImageServices'
 
     export default {
         name: "MainPage",
         components: {
-            Thumb, WorkspaceNavigator
+            Thumb, WorkspaceNavigator, ThumbWithPreview
         },
         methods: {
             onWorkspaceSelected: function(workspaceName) {

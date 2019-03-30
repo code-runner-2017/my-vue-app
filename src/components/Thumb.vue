@@ -2,9 +2,10 @@
     <v-flex xs12 sm6 ml-2>
         <v-card>
             <v-img
-                    :src="`https://unsplash.it/150/300?image=${Math.floor(Math.random() * 100) + 1}`"
+                    :src="src"
                     height="150px"
                     width="100%"
+                    v-on:click="$emit('click')"
             ></v-img>
 
             <v-card-title primary-title>
