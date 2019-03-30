@@ -1,5 +1,4 @@
 <template>
-<!--        <Thumb :src="url" :title="title" @click="onThumbClicked"/>-->
         <v-dialog
                 v-model="dialog"
                 width="500" height="500">
