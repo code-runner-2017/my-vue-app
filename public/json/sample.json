@@ -1,7 +1,20 @@
 {
-  "urls": [
-    "https://dummyimage.com/150.png/08f/fff",
-    "https://dummyimage.com/150.png/F8f/fff",
-    "https://dummyimage.com/150.png/3Ff/fff"
+  "items": [
+    {
+      "title": "Blade Runner",
+      "url": "https://dummyimage.com/150.png/08f/fff"
+    },
+    {
+      "title": "2001 A Space Odissey",
+      "url": "https://dummyimage.com/150.png/F8f/fff"
+    },
+    {
+      "title": "Shining",
+      "url": "https://dummyimage.com/150.png/F8f/fff"
+    },
+    {
+      "title": "Matrix",
+      "url": "https://dummyimage.com/150.png/3Ff/fff"
+    }
   ]
 }

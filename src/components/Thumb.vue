@@ -1,19 +1,20 @@
 <template>
-    <div>
-        <img :src="src" alt="">
+    <div class="thumb">
+            <img :src="src" :alt="title">
+            <div>{{title}}</div>
     </div>
 </template>
 
 <script>
     export default {
         name: "Thumb",
-        props: ['src'],
+        props: ['src', 'title'],
     }
 </script>
 
 <style scoped>
-div {
-    display: inline;
-    margin-right: 4px;
-}
+    .thumb {
+        display: inline;
+        margin-right: 4px;
+    }
 </style>

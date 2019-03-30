@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <Thumb v-for='i in 20' :src="urls[i%3]"/>
+        <Thumb v-for='item in items' :src="item.url" :title="item.title"/>
     </v-container>
 </template>
 
@@ -21,13 +21,14 @@
         props: ['text'],
         data() {
             return {
-                urls: []
+                items: []
             }
         },
         mounted () {
             ImageServices.getImages()
                 .then(response => {
-                    this.urls = response.data.urls
+                    this.items = response.data.items;
+
                 });
         }
     }
