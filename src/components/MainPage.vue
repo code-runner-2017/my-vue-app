@@ -27,7 +27,7 @@
         <v-spacer/>
 
         <v-layout mt-2>
-            <WorkspaceNavigator @click="onWorkspaceSelected"/>
+            <WorkspaceNavigator @selected="onWorkspaceSelected"/>
             <v-layout row>
                 <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
             </v-layout>
