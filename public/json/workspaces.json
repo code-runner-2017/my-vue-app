@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "Images",
+      "icon": "image"
+    },
+    {
+      "title": "Videos",
+      "icon": "video_library"
+    },
+    {
+      "title": "Documents",
+      "icon": "receipt"
+    },
+    {
+      "title": "Products",
+      "icon": "local_grocery_store"
+    }
+  ]
+}

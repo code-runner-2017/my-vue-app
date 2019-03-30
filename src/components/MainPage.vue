@@ -25,8 +25,11 @@
         </v-toolbar>
 
         <v-spacer/>
-        <v-layout mt-2>
 
+
+
+        <v-layout mt-2>
+            <WorkspaceNavigator/>
             <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
 
         </v-layout>
@@ -35,12 +38,13 @@
 
 <script>
     import Thumb from './Thumb'
+    import WorkspaceNavigator from './WorkspaceNavigator'
     import ImageServices from '../services/ImageServices'
 
     export default {
         name: "MainPage",
         components: {
-            Thumb
+            Thumb, WorkspaceNavigator
         },
         methods: {
             foo: function() {
