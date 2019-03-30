@@ -26,12 +26,11 @@
 
         <v-spacer/>
 
-
-
         <v-layout mt-2>
             <WorkspaceNavigator/>
-            <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
-
+            <v-layout row>
+                <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
+            </v-layout>
         </v-layout>
     </v-container>
 </template>
