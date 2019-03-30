@@ -1,6 +1,35 @@
 <template>
-    <v-container>
-        <Thumb v-for='item in items' :src="item.url" :title="item.title"/>
+    <v-container px-2 py-2>
+        <v-toolbar dark color="primary">
+            <v-toolbar-side-icon></v-toolbar-side-icon>
+
+            <v-toolbar-title class="white--text">Title</v-toolbar-title>
+
+            <v-spacer></v-spacer>
+
+            <v-btn icon>
+                <v-icon>search</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>apps</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>refresh</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+                <v-icon>more_vert</v-icon>
+            </v-btn>
+        </v-toolbar>
+
+        <v-spacer/>
+        <v-layout mt-2>
+
+            <Thumb :src="item.url" :title="item.title" v-for='item in items'/>
+
+        </v-layout>
     </v-container>
 </template>
 
