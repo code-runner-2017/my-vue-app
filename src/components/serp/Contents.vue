@@ -1,5 +1,5 @@
 <template>
-    <v-layout row wrap>
+    <v-layout row wrap >
         <ThumbWithPreview :title="item"
                           :src="getRandomSrc()" v-for='item in items' v-key="item"/>
     </v-layout>
@@ -13,7 +13,7 @@
         components: {ThumbWithPreview},
         methods: {
             getRandomSrc() {
-                return 'https://unsplash.it/150/300?image=' + Math.floor((Math.random() * 100)+1);
+                return 'https://unsplash.it/400/400?image=' + Math.floor((Math.random() * 100)+1);
             }
         },
         props: ['items']

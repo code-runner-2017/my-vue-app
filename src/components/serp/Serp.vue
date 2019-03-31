@@ -1,7 +1,7 @@
 <template>
-    <v-layout>
+    <v-layout >
         <Navigator @selected="onWorkspaceSelected"/>
-        <v-container grid-list-md pt-0>
+        <v-container grid-list-md pt-0 align-start fill-height>
             <Contents :items="items"/>
         </v-container>
     </v-layout>
