@@ -1,5 +1,5 @@
 <template>
-    <v-flex xs12 sm6 ml-2>
+    <v-flex xs3>
         <v-card>
             <v-img
                     :src="src"

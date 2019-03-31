@@ -1,6 +1,8 @@
 <template>
   <v-app>
     <MainPage/>
+<!--    <TestLayout/>-->
+
     <!--
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
@@ -27,12 +29,14 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import MainPage from './components/MainPage'
+import TestLayout from './components/TestLayout'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    MainPage
+    MainPage,
+    TestLayout
   },
   data () {
     return {

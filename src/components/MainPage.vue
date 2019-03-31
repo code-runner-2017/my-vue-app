@@ -28,9 +28,11 @@
 
         <v-layout mt-2>
             <WorkspaceNavigator @selected="onWorkspaceSelected"/>
-            <v-layout row>
-                <ThumbWithPreview :src="item.url" :title="item.title" v-for='item in items'/>
-            </v-layout>
+            <v-container grid-list-md pt-0>
+                <v-layout row wrap>
+                    <ThumbWithPreview :src="item.url" :title="item.title" v-for='item in items'/>
+                </v-layout>
+            </v-container>
         </v-layout>
     </v-container>
 </template>
