@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <MainPage/>
+<!--    <MainPage/>-->
 <!--    <TestLayout/>-->
+    <Serp/>
 
     <!--
     <v-toolbar app>
@@ -30,13 +31,15 @@
 import HelloWorld from './components/HelloWorld'
 import MainPage from './components/MainPage'
 import TestLayout from './components/TestLayout'
+import Serp from './components/serp/Serp'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     MainPage,
-    TestLayout
+    TestLayout,
+    Serp
   },
   data () {
     return {
