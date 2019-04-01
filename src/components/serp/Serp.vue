@@ -16,7 +16,7 @@
         name: "Serp",
         data() {
             return {
-                myitems: [1, 2, 3, 4, 5, 6, 7],
+                myitems: ["Matrix", "Blade Runner", "Gone with the wind", "Citizen Kane", "Fargo", "Shining"],
                 workspace: null,
                 filters: null,
                 sort: null
