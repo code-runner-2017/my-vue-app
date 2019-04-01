@@ -38,15 +38,14 @@
 </template>
 
 <script>
-    import Thumb from './Thumb'
     import ThumbWithPreview from './ThumbWithPreview'
-    import WorkspaceNavigator from './WorkspaceNavigator'
+    import WorkspaceNavigator from './serp/Navigator'
     import ImageServices from '../services/ImageServices'
 
     export default {
         name: "MainPage",
         components: {
-            Thumb, WorkspaceNavigator, ThumbWithPreview
+            WorkspaceNavigator, ThumbWithPreview
         },
         methods: {
             onWorkspaceSelected: function(workspaceName) {
