@@ -1,8 +1,8 @@
 <template>
   <v-app>
-<!--    <MainPage/>-->
+    <MainPage/>
 <!--    <TestLayout/>-->
-    <Serp/>
+<!--    <Serp/>-->
 
     <!--
     <v-toolbar app>
@@ -31,7 +31,7 @@
 import HelloWorld from './components/HelloWorld'
 import MainPage from './components/MainPage'
 import TestLayout from './components/TestLayout'
-import Serp from './components/serp/Serp'
+
 
 export default {
   name: 'App',
@@ -39,7 +39,7 @@ export default {
     HelloWorld,
     MainPage,
     TestLayout,
-    Serp
+
   },
   data () {
     return {

@@ -7,18 +7,20 @@
                 <Thumb :src="src" :title="title" @click="dialog=true"/>
             </template>
 
-            <v-card>
-                <v-img :src="src" width="500" height="500"/>
+            <v-card class="vcard">
+                <v-img :src="src" width="500" height="500" v-if="Math.random() > 0.3"/>
+                <VideoPlayer v-else/>
             </v-card>
         </v-dialog>
 </template>
 
 <script>
     import Thumb from './Thumb'
+    import VideoPlayer from "./VideoPlayer";
 
     export default {
         name: "ThumbWithPreview",
-        components: { Thumb },
+        components: {VideoPlayer, Thumb },
         props: ['src', 'title'],
         data () {
             return {
@@ -34,5 +36,8 @@
 </script>
 
 <style scoped>
-
+.vcard {
+    background-color: black;
+    overflow: hidden;
+}
 </style>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "mediaelement": "^4.2.9",
     "vue": "^2.6.6",
     "vuetify": "^1.5.5"
   },
