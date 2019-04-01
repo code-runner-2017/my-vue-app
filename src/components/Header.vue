@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar dark color="primary">
+    <v-toolbar dark color="primary" class="mb-2">
         <v-toolbar-side-icon></v-toolbar-side-icon>
 
         <v-toolbar-title class="white--text">Sample Vue App</v-toolbar-title>
