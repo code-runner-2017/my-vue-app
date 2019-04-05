@@ -2,7 +2,6 @@
   <v-app>
     <MainPage/>
 <!--    <TestLayout/>-->
-
   </v-app>
 </template>
 
